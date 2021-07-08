@@ -69,7 +69,7 @@ function App() {
           <button className="btn-direct" onClick={prev}>Back</button>
           <button className="btn-direct" onClick={next}>Next</button>
         </div>
-          <div className=" grid-layout-main">
+          <div className="sm:overflow-hidden md:grid-layout-main">
             {pokemonData.map((pokemon, i) => {
               return <Card key={i} pokemon={pokemon}/>
             })}
