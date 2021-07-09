@@ -10,7 +10,7 @@ function Card({ pokemon }) {
             <div className="mb-4 text-xl font-semibold Card__name">
                 {pokemon.name}
             </div>
-            <div className="flex justify-center mx-24 mb-4 Card__types ">
+            <div className="flex justify-center mx-24 mb-4 space-between Card__types ">
                 {pokemon.types.map(type => {
                     return (
                         <div class="Card__type btn-type" style={{ backgroundColor: pokemonType[type.type.name]}} >{type.type.name}</div>
