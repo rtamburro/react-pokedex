@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import { getAllPokemon, getPokemon } from './services/pokemon';
 import Card from './components/Card';
 import Navbar from './components/Navbar';
-import logo from './logo.svg';
 import './App.css';
 import ClipLoader from "react-spinners/ClipLoader";
 
@@ -69,7 +68,7 @@ function App() {
           <button className="btn-direct" onClick={prev}>Back</button>
           <button className="btn-direct" onClick={next}>Next</button>
         </div>
-          <div className="sm:overflow-hidden md:grid-layout-main">
+          <div className="grid justify-center grid-cols-1 overflow-hidden font-mono text-white md:grid-cols-3">
             {pokemonData.map((pokemon, i) => {
               return <Card key={i} pokemon={pokemon}/>
             })}

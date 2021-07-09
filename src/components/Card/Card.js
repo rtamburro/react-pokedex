@@ -1,16 +1,16 @@
-import react from 'react';
+import React from 'react';
 import pokemonType from '../../helpers/pokemonTypes';
 
 function Card({ pokemon }) {
     return (
-        <div className="Card mt-8  mr-12 ml-12 bg-gray-600 rounded-xl text-center capitalize shadow-lg">
+        <div className="mt-8 ml-12 mr-12 text-center capitalize bg-gray-600 shadow-lg Card rounded-xl">
             <div className="Card__img">
                 <img className="mx-auto" src={pokemon.sprites.front_default} alt=""/>
             </div>
-            <div className="Card__name mb-4 font-semibold text-xl">
+            <div className="mb-4 text-xl font-semibold Card__name">
                 {pokemon.name}
             </div>
-            <div className="Card__types mx-24 flex justify-center mb-4 ">
+            <div className="flex justify-center mx-24 mb-4 Card__types ">
                 {pokemon.types.map(type => {
                     return (
                         <div class="Card__type btn-type" style={{ backgroundColor: pokemonType[type.type.name]}} >{type.type.name}</div>
@@ -18,13 +18,13 @@ function Card({ pokemon }) {
                 })}
             </div>
             <div className="Card__info">
-                <div className="Card__data Card__data--weight mb-4">
+                <div className="mb-4 Card__data Card__data--weight">
                     <p className="title">Weight: {pokemon.weight}lbs</p>
                 </div>
-                <div className="Card__data Card__data--height mb-4">
+                <div className="mb-4 Card__data Card__data--height">
                     <p className="title">Height: {pokemon.height}ft</p>
                 </div>
-                <div className="Card__data Card__data--ability mb-4" >
+                <div className="mb-4 Card__data Card__data--ability" >
                     <p className="title">Abilities: {pokemon.abilities[0].ability.name}</p>
                 </div>
             </div>
