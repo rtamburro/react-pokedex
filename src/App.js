@@ -68,7 +68,7 @@ function App() {
           <button className="btn-direct" onClick={prev}>Back</button>
           <button className="btn-direct" onClick={next}>Next</button>
         </div>
-          <div className="grid justify-center grid-cols-1 overflow-hidden font-mono text-white md:grid-cols-3">
+          <div className="grid justify-center grid-cols-1 font-mono text-white md:grid-cols-3">
             {pokemonData.map((pokemon, i) => {
               return <Card key={i} pokemon={pokemon}/>
             })}
