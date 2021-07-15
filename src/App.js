@@ -17,7 +17,7 @@ function App() {
       let response = await getAllPokemon(initialUrl);
       setNextUrl(response.next);
       setPrevUrl(response.previous);
-      await loadingPokemon(response.results);
+      await loadPokemon(response.results);
       setLoading(false);
     }
     fetchData();
@@ -25,24 +25,24 @@ function App() {
 
   const next = async () => {
     setLoading(true);
-    let data = await getAllPokemon(nextUrl)
-    await loadingPokemon(data.results)
+    let data = await getAllPokemon(nextUrl);
+    await loadPokemon(data.results);
     setNextUrl(data.next);
-    setPrevUrl(data.prevUrl);
+    setPrevUrl(data.previous);
     setLoading(false);
   }
 
   const prev = async () => {
     if (!prevUrl) return;
     setLoading(true);
-    let data = await getAllPokemon(prevUrl)
-    await loadingPokemon(data.results)
+    let data = await getAllPokemon(prevUrl);
+    await loadPokemon(data.results);
     setNextUrl(data.next);
-    setPrevUrl(data.prevUrl);
+    setPrevUrl(data.previous);
     setLoading(false);
   }
 
-  const loadingPokemon = async (data) => {
+  const loadPokemon = async (data) => {
     let _pokemonData = await Promise.all(
       data.map(async pokemon => {
         let pokemonRecord = await getPokemon(pokemon.url);
