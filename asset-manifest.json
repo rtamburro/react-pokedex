@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-pokedex/static/css/main.fa53b02f.chunk.css",
-    "main.js": "/react-pokedex/static/js/main.402ca349.chunk.js",
-    "main.js.map": "/react-pokedex/static/js/main.402ca349.chunk.js.map",
+    "main.css": "/react-pokedex/static/css/main.5137bdaf.chunk.css",
+    "main.js": "/react-pokedex/static/js/main.dc8241a7.chunk.js",
+    "main.js.map": "/react-pokedex/static/js/main.dc8241a7.chunk.js.map",
     "runtime-main.js": "/react-pokedex/static/js/runtime-main.ca37b8d0.js",
     "runtime-main.js.map": "/react-pokedex/static/js/runtime-main.ca37b8d0.js.map",
     "static/js/2.fa7143d6.chunk.js": "/react-pokedex/static/js/2.fa7143d6.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.03745c92.chunk.js": "/react-pokedex/static/js/3.03745c92.chunk.js",
     "static/js/3.03745c92.chunk.js.map": "/react-pokedex/static/js/3.03745c92.chunk.js.map",
     "index.html": "/react-pokedex/index.html",
-    "static/css/main.fa53b02f.chunk.css.map": "/react-pokedex/static/css/main.fa53b02f.chunk.css.map",
+    "static/css/main.5137bdaf.chunk.css.map": "/react-pokedex/static/css/main.5137bdaf.chunk.css.map",
     "static/js/2.fa7143d6.chunk.js.LICENSE.txt": "/react-pokedex/static/js/2.fa7143d6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ca37b8d0.js",
     "static/js/2.fa7143d6.chunk.js",
-    "static/css/main.fa53b02f.chunk.css",
-    "static/js/main.402ca349.chunk.js"
+    "static/css/main.5137bdaf.chunk.css",
+    "static/js/main.dc8241a7.chunk.js"
   ]
 }
